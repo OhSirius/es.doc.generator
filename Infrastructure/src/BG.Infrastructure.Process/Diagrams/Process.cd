@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BG.Infrastructure.Process.Process.DefaultDocumentBusinessProcess&lt;TEntity&gt;">
+    <Position X="2" Y="6.5" Width="3.25" />
+    <InheritanceLine Type="BG.Infrastructure.Process.Process.DocumentBusinessProcessBase&lt;TEntity&gt;" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="3.625" Y="5.617" />
+        <Point X="3.625" Y="6.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAQAAAAAAAAAABAAAEAAEAAQAAAEAAAAIA=</HashCode>
+      <FileName>Process\Impl\DefaultDocumentBusinessProcess.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BG.Infrastructure.Process.Process.DocumentBusinessProcessBase&lt;TEntity&gt;">
+    <Position X="2.25" Y="4" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAQAAAAAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Process\Impl\DocumentBusinessProcessBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Right" Position="0.1" />
+  </Class>
+  <Class Name="BG.Infrastructure.Process.Process.EntityBusinessProcessBase&lt;TEntity&gt;">
+    <Position X="2" Y="0.5" Width="3.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAiABAAAAAAgAgAAAAABAAAAAAEAAEYAQAAgAAAAAAA=</HashCode>
+      <FileName>Process\Impl\EntityBusinessProcessBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Right" Position="0.121" />
+  </Class>
+  <Class Name="BG.Infrastructure.Process.Process.DefaultCreateDocumentOperation">
+    <Position X="11.75" Y="6" Width="3.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAIAAAAAACEgAACBAAACAAQAAQEAAgAAAAAA=</HashCode>
+      <FileName>Process\Impl\DefaultCreateDocumentOperation.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.531" />
+  </Class>
+  <Interface Name="BG.Infrastructure.Process.Process.ICreateEntityOperation&lt;TEntity&gt;">
+    <Position X="6.75" Y="4.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Process\ICreateEntityOperation.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BG.Infrastructure.Process.Process.IDocumentBusinessProcess&lt;TEntity&gt;">
+    <Position X="8" Y="3" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAQAAAAAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Process\IDocumentBusinessProcess.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BG.Infrastructure.Process.Process.IEntityBusinessProcess&lt;TEntity&gt;">
+    <Position X="8.25" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAAEAAEAAQAAgAAAAAAA=</HashCode>
+      <FileName>Process\IEntityBusinessProcess.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BG.Infrastructure.Process.Process.IDocumentInitialStateOperation">
+    <Position X="6.5" Y="7.75" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Process\IDocumentInitialStateOperation.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BG.Infrastructure.Process.Process.ICreateDocumentOperation&lt;TEntity&gt;">
+    <Position X="6.75" Y="6.25" Width="2.75" />
+    <InheritanceLine Type="BG.Infrastructure.Process.Process.ICreateEntityOperation&lt;TEntity&gt;" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="8.125" Y="5.733" />
+        <Point X="8.125" Y="6.414" />
+        <Point X="8.125" Y="6.414" />
+        <Point X="8.125" Y="6.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Process\ICreateDocumentOperation.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

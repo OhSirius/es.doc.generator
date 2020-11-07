@@ -1,0 +1,2 @@
+﻿DBCC CHECKIDENT ('[BGApplication]', RESEED, 0);
+DBCC CHECKIDENT ('[BGLicenseType]', RESEED, 0);

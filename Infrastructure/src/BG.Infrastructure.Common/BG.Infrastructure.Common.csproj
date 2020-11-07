@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{68F1F4A8-6535-454E-99D1-7B9BD0C353B6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BG.Infrastructure.Common</RootNamespace>
+    <AssemblyName>BG.Infrastructure.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'LiteRelease|AnyCPU'">
+    <OutputPath>bin\LiteRelease\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'BasisRelease|AnyCPU'">
+    <OutputPath>bin\BasisRelease\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ProRelease|AnyCPU'">
+    <OutputPath>bin\ProRelease\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Unity.3.5.1404.0\lib\net45\Microsoft.Practices.Unity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Unity.3.5.1404.0\lib\net45\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.RegistrationByConvention, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Unity.3.5.1404.0\lib\net45\Microsoft.Practices.Unity.RegistrationByConvention.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\NLog.4.5.0\lib\net45\NLog.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configuration\CronServer.cs" />
+    <Compile Include="Configuration\CustomServiceConfiguration.cs" />
+    <Compile Include="Configuration\CustomServiceHost.cs" />
+    <Compile Include="Configuration\FlatWsdl.cs" />
+    <Compile Include="Cryptography\CryptographyHelper.cs" />
+    <Compile Include="Extensions\CollectionExtensions.cs" />
+    <Compile Include="Extensions\CommunicationObjectExtensions.cs" />
+    <Compile Include="Extensions\IPExtensions.cs" />
+    <Compile Include="Extensions\MonadicExtensions.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Extensions\TypeExtensions.cs" />
+    <Compile Include="Guard.cs" />
+    <Compile Include="Logging\LogManager.cs" />
+    <Compile Include="MEF\IEntityMetaData.cs" />
+    <Compile Include="MEF\IModuleInstaller.cs" />
+    <Compile Include="MEF\IModuleMetaData.cs" />
+    <Compile Include="MEF\IPresetMetaData.cs" />
+    <Compile Include="MEF\ModulesLoader.cs" />
+    <Compile Include="MEF\ModulesMatcher.cs" />
+    <Compile Include="Processes\DefautProcessDescription.cs" />
+    <Compile Include="Processes\IProcess.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registry\HardwareHelper.cs" />
+    <Compile Include="Registry\RegistryHelper.cs" />
+    <Compile Include="Unity\FastString.cs" />
+    <Compile Include="Unity\Injection\AllProperties.cs" />
+    <Compile Include="Unity\Injection\ByTypeMatchingConvention.cs" />
+    <Compile Include="Unity\Injection\ConnectionStringMatchingConvention.cs" />
+    <Compile Include="Unity\Injection\ConstructorParameterMatchingConventions.cs" />
+    <Compile Include="Unity\Injection\DefaultMatchingConventionsPolicy.cs" />
+    <Compile Include="Unity\Injection\FileNameMatchingConvention.cs" />
+    <Compile Include="Unity\Injection\IMapParameterNameToRegistrationNamePolicy.cs" />
+    <Compile Include="Unity\Injection\IParameterMatchingConventionsPolicy.cs" />
+    <Compile Include="Unity\Injection\MapParameterNamesToRegistrationNames.cs" />
+    <Compile Include="Unity\Injection\MapParameterNamesToRegistrationNamesExtension.cs" />
+    <Compile Include="Unity\Injection\MapParameterNamesToRegistrationNamesStrategy.cs" />
+    <Compile Include="Unity\Injection\MapParameterNameToRegistrationNamePolicy.cs" />
+    <Compile Include="Unity\Injection\NamedPropertyOverride.cs" />
+    <Compile Include="Unity\Injection\ParameterMatcher.cs" />
+    <Compile Include="Unity\Injection\ParameterMatchingConvention.cs" />
+    <Compile Include="Unity\Injection\SmartConstructor.cs" />
+    <Compile Include="Unity\Injection\SpecifiedNameMatchingConvention.cs" />
+    <Compile Include="Unity\Injection\StringAsMappingNameMatchingConvention.cs" />
+    <Compile Include="Unity\Injection\UnityContainerExtensions.cs" />
+    <Compile Include="Unity\Tools.cs" />
+    <Compile Include="Utility\CompositePredicate.cs" />
+    <Compile Include="Utility\ConstructorParameter.cs" />
+    <Compile Include="Utility\SelectedConstructorCache.cs" />
+    <Compile Include="Utility\WeakReference.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
